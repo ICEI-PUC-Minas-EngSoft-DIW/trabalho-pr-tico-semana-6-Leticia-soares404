@@ -1,12 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>Recipeasy</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+
+    <header class="header">
+        <div class="header__top"></div>
+
+        <div class="header__container">
+            <div class="header__logo">
+            <img class="logo"src="img/logo-recipeasy.png" alt="Recipeasy Logo">
+            </div>
+            <nav class="nav menu">
+                <a class="menu__item" href="#">home</a>
+                <a class="menu__item" href="#">about</a>
+                <a class="menu__item" href="#">contact</a>
+                <a class="menu__item" href="#login">login / sign up</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero__overlay">
+            <img class="hero__image" src="img/pastry.jpg" alt="sweet pastries">
+                <div class="hero__content">
+                    <div class="hero__title">
+                        <h1>Encontre as melhores receitas</h1>
+                    </div>
+                    <div class="hero__text">
+                        <h2>com os ingredientes que você já tem em casa!</h2>
+                    </div>
+                    <div class="hero__text"></div>
+            </div>
+            <a href="#" class="btn">ver receitas</a>
+        </div>
+    </section>
+
+    <main class="main">
+        <section class="recipes">
+            <div class="r-logo">
+                <img src="img/r-logo.png" alt="Recipeasy Logo">
+            </div>
+            <h2 class="recipes__title">
+                veja as receitas que estão bombando
+            </h2>
+
+            <div class="recipes__grid">
+
+                <article class="card">
+                    <div class="card__image">
+                        <img src="img/cupcake.png" alt="Cupcake">
+                    </div>
+                    <h2 class="card__title">Cupcake</h2>
+                    <p class="card__text">Receita de cupcake americano</p>
+                    <a href="#" class="btn-rcp">ver receita</a>
+                </article>
+
+                <article class="card">
+                    <div class="card__image">
+                        <img src="img/pasta.jpg" alt="Macarrão">
+                    </div>
+                    <h2 class="card__title">Macarrão</h2>
+                    <p class="card__text">Receita de macarrão italiano</p>
+                    <a href="#" class="btn-rcp">ver receita</a>
+                </article>
+
+                <article class="card">
+                    <div class="card__image">
+                        <img src="img/carrot-cake.jpg" alt="Bolo de Cenoura">
+                    </div>
+                    <h2 class="card__title">Bolo Brasileiro</h2>
+                    <p class="card__text">Receita de bolo de cenoura com cobertura de chocolate</p>
+                    <a href="#" class="btn-rcp">ver receita</a>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p class="footer__text">© 2026 - Recipeasy</p>
+    </footer>
+
+    <div id="login" class="popup">
+        <div class="popup__content">
+         <a href="#" class="popup__close">&times;</a>
+
+            <h2>Login</h2>
+
+            <form class="form">
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Senha" required>
+                <button type="submit">Entrar</button>
+            </form>
+
+            <p>Não tem conta? <a href="#">Cadastre-se</a></p>
+        </div>
+    </div>
+</div>
 </body>
 </html>

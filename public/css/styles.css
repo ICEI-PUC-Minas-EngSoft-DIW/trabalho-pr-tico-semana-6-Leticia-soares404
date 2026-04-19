@@ -1,0 +1,385 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body {
+    font-family: "Jersey 25", Arial;
+}
+ 
+.header {
+    background: linear-gradient(135deg, #ffd99d, #fff5e6);
+}
+ 
+.header .header__top {
+    height: 20px;
+    background-color: #fff5e6;
+}
+ 
+.header .header__container {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    position: relative;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+ 
+.header__logo {
+    margin-right: 20px;
+    width: 100px;
+    height: 40px;
+    flex-shrink: 0;
+}
+ 
+.logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+ 
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    background: none;
+    border: 1px solid #9c6831;
+    border-radius: 6px;
+    padding: 6px 8px;
+    cursor: pointer;
+}
+ 
+.nav-toggle span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background-color: #9c6831;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+ 
+.nav-menu {
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+}
+ 
+.menu {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+ 
+.menu .menu__item {
+    padding: 8px 10px;
+    border: 1px solid #9c6831;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #9c6831;
+    white-space: nowrap;
+}
+ 
+.menu .menu__item:hover {
+    background-color: #bbb;
+}
+ 
+.hero {
+    background-color: #ccc;
+    position: relative;
+    margin-bottom: 100px;
+}
+ 
+.hero__image {
+    display: flex;
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+ 
+.hero__content {
+    z-index: 1;
+    position: relative;
+    max-width: 400px;
+    padding: 20px;
+    top: 75px;
+    margin: 0px auto;
+    background-color: #fff5e6;
+}
+ 
+.hero__title {
+    height: 40px;
+    margin-bottom: 30px;
+    color: #9c6831;
+    text-align: center;
+    font-family: "Jersey 25", Arial, sans-serif;
+}
+ 
+.hero__text {
+    height: 20px;
+    font-family: "Jersey 25", Arial, sans-serif;
+    margin-bottom: 1px;
+    color: #9c6831;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 10px;
+}
+ 
+.btn-rcp {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #9c6831;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #9c6831;
+}
+ 
+.main {
+    padding: 30px;
+    background: linear-gradient(135deg, #ffd99d, #fff5e6);
+}
+ 
+.recipes .r-logo {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 50px;
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+ 
+.recipes__title {
+    color: #9c6831;
+    text-align: center;
+    margin-bottom: 20px;
+}
+ 
+.recipes__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 180px));
+    gap: 20px;
+    justify-content: center;
+    justify-items: center;
+}
+ 
+.card {
+    width: 100%;
+    padding: 15px;
+    background-color: #fff5e6;
+    text-align: center;
+}
+ 
+.card__image {
+    height: 140px;
+    background-color: #aaa;
+    margin-bottom: 10px;
+}
+ 
+.card__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .card__title {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #9c6831;
+}
+
+.card .card__text {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.card__footer {
+    margin-top: 10px;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+ 
+.popup {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+ 
+.popup:target {
+    opacity: 1;
+    visibility: visible;
+}
+ 
+.popup__content {
+    background: #fff5e6;
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    position: relative;
+    color: #9c6831;
+}
+ 
+.popup__content p {
+    margin-top: 10px;
+    font-size: 12px;
+}
+ 
+.popup__close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #9c6831;
+}
+ 
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+ 
+.form input {
+    padding: 10px;
+    border: 1px solid #9c6831;
+    border-radius: 5px;
+}
+ 
+.form button {
+    padding: 10px;
+    border: none;
+    background: #9c6831;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+ 
+@media (max-width: 1024px) {
+    .recipes__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+ 
+@media (max-width: 768px) {
+ 
+    .header .header__container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        gap: 0;
+    }
+ 
+    .header__logo {
+        margin-right: 0;
+    }
+ 
+    .nav-toggle {
+        display: flex;
+        position: absolute;
+        top: 14px;
+        right: 10px;
+    }
+ 
+    .nav-menu {
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.35s ease;
+    }
+ 
+    .nav-toggle:focus + .nav-menu,
+    .nav-toggle:focus-within + .nav-menu {
+        max-height: 300px;
+    }
+ 
+    .menu {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        padding: 10px 0;
+        gap: 6px;
+    }
+ 
+    .menu .menu__item {
+        width: 100%;
+        text-align: center;
+    }
+ 
+    .hero {
+        margin-bottom: 140px;
+    }
+ 
+    .hero__content {
+        max-width: 90%;
+        top: 50px;
+    }
+ 
+    .recipes__grid {
+        grid-template-columns: 1fr;
+    }
+ 
+    .highlight-section {
+        flex-direction: column;
+    }
+ 
+    .highlight-section__image {
+        width: 100%;
+    }
+ 
+    .popup__content {
+        width: 90%;
+        max-width: 340px;
+    }
+}
+ 
+
+@media (max-width: 480px) {
+    .main {
+        padding: 16px;
+    }
+ 
+    .hero__title {
+        font-size: 1.2rem;
+    }
+ 
+    .btn-rcp {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+    }
+ 
+    .card {
+        padding: 10px;
+    }
+ 
+    .card__image {
+        height: 110px;
+    }
+ 
+    .footer {
+        font-size: 0.85rem;
+        padding: 14px;
+    }
+}
