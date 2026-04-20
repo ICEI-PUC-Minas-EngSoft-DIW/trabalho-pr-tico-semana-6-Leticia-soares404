@@ -8,18 +8,17 @@ No trabalho dessa semana vamos alterar o projeto para que a responsividade da ho
 
 ## Informações Gerais
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome: Letícia 
+- Matricula: 924272
+- Proposta de projeto escolhida: Site de Receitas
+- Breve descrição sobre seu projeto: Site de Receitas com receitas personalizadas para cada usuário e seus ingredientes.
 
 ## Print da versão responsiva com Bootstrap [DESKTOP]
 
-<<  COLOQUE A IMAGEM AQUI >>
+![Imagem da versão Desktop](./public/img/versao-desktop)
 
 ## Print da versão responsiva com Bootstrap [MOBILE] (*)
 
-<<  COLOQUE A IMAGEM AQUI >>
-
+![Imagem da versão Mobile](./public/img/versao-mobile)
 
 (*) Utilize as ferramentas do desenvolvedor do seu navegador para colocar no modo reponsivo, escolha um celular qualquer e recarregue a página antes de tirar o print. 
